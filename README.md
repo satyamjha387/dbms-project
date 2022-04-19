@@ -11,6 +11,7 @@ A good canteen management software solution must have the following properties:
  3)Payment Gateway
  
  4)ordered Items
+ 
 **for Staff**
  
  1)A login Option (for security purcpose)

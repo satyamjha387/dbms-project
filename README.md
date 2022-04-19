@@ -2,6 +2,7 @@
 Canteen management System:
 The purpose of this project is to create a software based solution for managing various requiremnents in a genral purpose Canteen.
 A good canteen management software solution must have the following properties:
+
 **For Customers**
  
  1)A menu list

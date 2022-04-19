@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link href="/css/tempstyles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class ="box" id="heading">
+        <h1>Manage Orders</h1>
+    </div>
+    <div class ="box" id="heading">
+        <button><a href="/adminMenu">Admin Menu</a></button>
+        <button><a href="/manageOrders">Change Payment Status</a></button>
+    </div>
+   
+    
+    <form action="/deleteOrderfromList" method="post"> <% for(var i=0;i<list.length;i++){%>
+        <div class="item">
+               <p>
+                    Name: <%=list[i].customer.name %> <br>
+                    Phone No: <%=list[i].customer.phoneNo %><br> 
+                    Ordered Items: <% for(var j=0;j<list[i].orderedItems.length;j++){%><br>
+                       <p><%=list[i].orderedItems[j].Dish%> </p> 
+                        <% } %><br>
+                     <button type="submit" name="id" value="<%=list[i]._id%>">Delete</button><br>
+                    
+               </p>   
+        </div>
+        <% } %> 
+       
+    </form>
+</body>
+</html>

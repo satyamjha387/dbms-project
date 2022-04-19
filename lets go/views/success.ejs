@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment SuccesFull</title>
+    <link href="/css/tempstyles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class ="box" id="heading">
+        <h1>ORDERED SUCCESFULLY</h1>
+    </div>
+    <div class ="box" id="heading">
+        <h1>ID: <%=orderID%></h1>
+        
+
+    </div>
+    
+
+    <form action="/orderAgain" method = "post">
+        <button type="submit" name = "button">Order Again</button>
+    </form>
+    <form action=""> <button><a href="/login">Home Page</a></button>
+    </form>
+   
+</body>
+</html>

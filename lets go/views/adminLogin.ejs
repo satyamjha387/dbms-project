@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link href="/css/tempstyles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class ="box" id="heading">
+        <h1><%=title %></h1>
+    </div>
+    <form action="/adminLogin" method="post">
+        <label for="loginID" >LOGIN ID:</label>
+        <input type="text" name="loginID" required>
+        <label for="password">PASSWORD</label>
+        <input type="password" name="password" required>
+        <button type="submit" name="button">LOG IN</button>
+    </form>
+</body>
+</html>

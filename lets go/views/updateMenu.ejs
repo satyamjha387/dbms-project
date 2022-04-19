@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Items</title>
+    <link href="/css/tempstyles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class ="box" id="heading">
+        <h1>Update Menu</h1>
+    </div>
+    <div class ="box" id="heading">
+        <button><a href="/adminMenu">Admin Menu</a></button>
+       
+    </div>
+    <form action="/updateMenu" method="post">
+        <label for="itemname">Item Name</label>
+        <input type="text" placeholder="Enter the item name" name="itemName">
+        <label for="itemPrice">Item Price: </label>
+        <input type="text" placeholder="enter the price" name="itemPrice">
+        <button type="submit">Update</button>
+    
+    </form>
+    <form action="/deleteItems" method="post"> <% for(var i=0;i<listOfDishes.length;i++){%>
+        <div class="item">
+             <p>
+                <%=listOfDishes[i].Dish %>
+                <%=listOfDishes[i].price  %>
+                <button name="checkbox" value="<%=listOfDishes[i]._id%>" onclick="this.form.submit()" >X</button>
+                 
+            </p>        
+        </div>
+        <% } %> 
+       
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="/css/tempstyles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class ="box" id="heading">
+        <h1>PAYMENT METHOD:</h1>
+    </div>
+    <form action="/status" method="post">
+        <input type="radio" name="payment_option" value="cash">  <label for="html">cash</label><br>
+        <input type="radio" name="payment_option" value="paytm"> <label for="html">payTM</label><br>
+        <input type="radio" name="payment_option" value="credit card"><label for="html">Credit</label><br>
+        <input type="radio" name="payment_option" value="Debit card"> <label for="html">Debit</label><br>  
+        <button type="submit" name ="button">pay now</button>    
+    </form>
+    
+</body>
+</html>
